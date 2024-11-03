@@ -1,0 +1,124 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  color: #ffffff;
+  background-color: #121212;
+  overflow: hidden;
+  position: relative;
+  cursor: url('https://assets.onecompiler.app/42wtznc2y/42wzz4gub/png-transparent-minecraft-diamond-pickaxe-illustration-minecraft-pocket-edition-pickaxe-mod-mining-angle-text-square-removebg-preview.png'), auto; /* Replace with the path to your cursor image */
+}
+
+/* Parallax Background */
+body[data-parallax]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  background-image: url('https://assets.onecompiler.app/42wtznc2y/42wzz4gub/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds_181624-11068.jpg'); /* Replace with your gaming background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.1s ease-out;
+  z-index: -1;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(31, 31, 31, 0.8);
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px solid #e50914;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #e50914;
+  text-shadow: 0 0 5px #e50914, 0 0 10px #e50914;
+  font-family: 'Audiowide', sans-serif;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  font-family: 'Audiowide', sans-serif;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+/* Main Sections */
+main {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-family: 'Audiowide', sans-serif;
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px #e50914;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Video Gallery */
+#video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#video-gallery iframe {
+  width: 300px;
+  height: 170px;
+  border: none;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(31, 31, 31, 0.8);
+  color: #777;
+  font-size: 0.9rem;
+}
